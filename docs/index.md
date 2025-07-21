@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /img/logo.png
-heroText: vuepress-theme-vdoing
+heroText: ZeYu微服务项目
 tagline: 🚀一款简洁高效的VuePress 知识管理&博客 主题
 actionText: 开始使用 →
 actionLink: /pages/a2f161/
@@ -42,12 +42,6 @@ postList: none
 </p>
 
 <br/>
-<p align="center" style="color: #999;">
-  赞助商 (进入注册为主题作者充电)
-</p>
-<p align="center">
-  <a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://jsd.cdn.zzko.cn/gh/xugaoyi/blog-gitalk-comment@master/img/441669861566_.2bedplbm21hc.jpg" alt="npm" class="no-zoom" style="width: 300px;border-radius: 2px;"></a>
-</p>
 
 ## 🎖特别用户
 ::: cardList 3
@@ -78,7 +72,7 @@ postList: none
 <br/>
 
 ## 🎉上新推荐
-* `v1.12.x`
+<!-- * `v1.12.x`
   - 新增配置项`pageStyle`，用于切换页面的风格样式，可选`卡片`、 `线条`风格。[详情](/pages/a20ce8/#pagestyle)
   - 新增配置项`bodyBgImgInterval`，用于在设置了多张背景大图时修改大图切换的时间间隔。[详情](/pages/a20ce8/#bodybgimginterval)
   - 新增配置项`defaultMode`，用于修改默认外观模式(v1.12.3)。[详情](/pages/a20ce8/#defaultmode)
@@ -90,7 +84,7 @@ postList: none
 * `v1.6.x`：支持[`四级目录`](/pages/33d574/#级别说明)，提高[站点结构](/pages/33d574/#级别说明)可塑性。
 * `v1.5.x`：新增[`笔记`容器](/pages/d0d7eb/)，轻松插入笔记框。
 * `v1.4.x`：新增了文章内容区块的 [背景底纹配置](/pages/a20ce8/#文章内容块的背景底纹)，让你的文章看起来像笔记本的风格~
-* `v1.2.x`：这个版本对整体的UI细节做了很多优化，比如标签栏和分类栏等
+* `v1.2.x`：这个版本对整体的UI细节做了很多优化，比如标签栏和分类栏等 -->
 * `v1.1.x`：从这个版本开始主题新增`超好用`、`高颜值`的Markdown容器，快去 [体验](/pages/d0d7eb/) 吧~
 
 更多上新请查阅：[**更新日志**](https://github.com/xugaoyi/vuepress-theme-vdoing/releases)
