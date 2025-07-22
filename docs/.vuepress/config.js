@@ -7,16 +7,14 @@ module.exports = {
   theme: 'vdoing', // 使用依赖包主题
   // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
 
-  title: "vuepress-theme-vdoing",
-  description: '一个基于VuePress的 知识管理&博客 主题',
+  title: "zeyu 文档",
+  description: 'ZeYu 微服务项目文档',
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    ['meta', { name: 'keywords', content: 'vuepress,theme,blog,vdoing' }],
-    ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+    ['meta', { name: 'keywords', content: 'zeyu,微服务,vuepress,技术文档,springcloud' }],
+    ['meta', { name: 'theme-color', content: '#2A3F5F' }], // 移动浏览器主题颜色
 
-    ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
-    ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
   ],
 
   // 主题配置
@@ -24,7 +22,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '指南', link: '/pages/a2f161/', items: [
+        text: '项目指南', link: '/pages/a2f161/', items: [
           { text: '主题初衷与诞生', link: '/pages/52d5c3/' },
           { text: '介绍', link: '/pages/a2f161/' },
           { text: '快速上手', link: '/pages/793dcb/' },
