@@ -18,29 +18,6 @@ features: # 可选的
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 postList: none
 ---
-<p align="center">
-  <a class="become-sponsor" href="/pages/1b12ed/">⭐ 支持这个项目</a>
-</p>
-
-<style>
-.become-sponsor {
-  padding: 8px 20px;
-  display: inline-block;
-  color: #2A3F5F;
-  border-radius: 30px;
-  box-sizing: border-box;
-  border: 1px solid #2A3F5F;
-  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
-}
-</style>
-
-<br/>
-<p align="center">
-  <a href="https://www.npmjs.com/package/vuepress-theme-vdoing" target="_blank"><img src="https://img.shields.io/npm/v/vuepress-theme-vdoing" alt="npm" class="no-zoom"></a>
-  <a href="https://www.npmjs.com/package/vuepress-theme-vdoing" target="_blank"><img src="https://img.shields.io/npm/dt/vuepress-theme-vdoing" alt="npm" class="no-zoom"></a>
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/stars/xugaoyi/vuepress-theme-vdoing' alt='GitHub stars' class="no-zoom"></a>
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/forks/xugaoyi/vuepress-theme-vdoing' alt='GitHub forks' class="no-zoom"></a>
-</p>
 
 <br/>
 
@@ -94,8 +71,6 @@ postList: none
 
 
 
-<!-- AD -->
-<div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
 <style>
   .page-wwads{
     width:100%!important;

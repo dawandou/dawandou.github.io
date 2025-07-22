@@ -5,6 +5,57 @@
 
 // // 颜色
 
+$accentColor = #5FB878         // 主色调（按钮、链接）：淡绿色，常见于 UI 风格中
+$bannerTextColor = #ffffff     // 首页 banner 文本：白色，清晰对比
+$arrowBgColor = #cde7da        // 下拉箭头背景：淡绿灰色系
+$badgeTipColor = #42b983       // Tip 成功提示：绿
+$badgeWarningColor = #FFD666   // 温和橙黄
+$badgeErrorColor = #FA7070     // 柔红，醒目但不刺眼
+
+$navbarHeight = 3.6rem
+$sidebarWidth = 18rem
+$contentWidth = 860px
+$homePageWidth = 1100px
+$rightMenuWidth = 230px
+$lineNumbersWrapperWidth = 2.5rem
+
+.theme-mode-light
+  --bodyBg: #ffffff
+  --mainBg: #ffffff
+  --sidebarBg: rgba(245, 250, 247, .9)         // 绿白混合背景
+  --blurBg: rgba(245, 250, 247, .95)
+  --textColor: #2e3a40
+  --textLightenColor: #5FB878                  // 文字强调色，主色同步
+  --borderColor: rgba(0, 0, 0, 0.08)
+  --codeBg: #f6f8fa                            // GitHub 风格代码背景
+  --codeColor: #333333
+  codeThemeLight()
+
+.theme-mode-dark
+  --bodyBg: #1E1E1E
+  --mainBg: #1E1E1E
+  --sidebarBg: rgba(25, 25, 25, 0.9)
+  --blurBg: rgba(25, 25, 25, 0.85)
+  --textColor: #c9d1d9
+  --textLightenColor: #8BE9A6                  // 主色加亮版，淡绿感
+  --borderColor: #2C2C3A
+  --codeBg: #2d2d2d
+  --codeColor: #eeeeee
+  codeThemeDark()
+
+.theme-mode-read
+  --bodyBg: #fdfae6                            // 纸张感淡黄
+  --mainBg: #fdfae6
+  --sidebarBg: rgba(253, 250, 230, .95)
+  --blurBg: rgba(253, 250, 230, .9)
+  --textColor: #2e3a40
+  --textLightenColor: #5FB878                  // 绿色强调
+  --borderColor: rgba(0, 0, 0, .08)
+  --codeBg: #f0f0e8                            // 淡灰黄
+  --codeColor: #333333
+  codeThemeLight()
+
+
 // $bannerTextColor = #fff // 首页banner区(博客标题)文本颜色
 // $accentColor = #11A8CD
 // $arrowBgColor = #ccc
