@@ -21,12 +21,11 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '开发指南', link: '/pages/a2f161/' },
-      { text: '技术文档', link: '/pages/a2f161/' },
-      { text: '', link: '/pages/a2f161/' },
-      { text: 'GitHub', link: '/pages/a2f161/' },
 
-
+      { text: '开发指南', link: '/pages/560990/', items: [
+         { text: '技术选型', link: '/pages/b2bb36/' },
+         { text: '项目架构', link: '/pages/560990/' },
+      ]},
 
       // {
       //   text: '项目指南', link: '/pages/a2f161/', items: [
@@ -64,7 +63,7 @@ module.exports = {
       // },
       // { text: '资源', link: '/pages/db78e2/' },
     ],
-    sidebarDepth: 3, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.gif', // 导航栏logo
     repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
@@ -75,9 +74,9 @@ module.exports = {
     // editLinkText: '编辑',
 
     // 以下配置是Vdoing主题改动的和新增的配置
-    sidebar: { mode: 'structuring', collapsable: false }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+    sidebar: { mode: 'structuring', collapsable: true }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
-    // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
+    sidebarOpen: true, // 初始状态是否打开侧边栏，默认true
     updateBar: { // 最近更新栏
       showToArticle: false, // 显示到文章页底部，默认true
       // moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
@@ -92,8 +91,8 @@ module.exports = {
 
     // contentBgStyle: 1,
 
-    category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
-    tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
+    category: true, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
+    tag: true, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
@@ -121,7 +120,7 @@ module.exports = {
       ]
     },
     footer: { // 页脚信息
-      createYear: 2019, // 博客创建年份
+      createYear: 2025, // 博客创建年份
       copyrightInfo: 'Evan Xu | MIT License', // 博客版权信息，支持a标签
     },
     htmlModules,
@@ -154,12 +153,12 @@ module.exports = {
     //   ]
     // }],
 
-    [
-      'vuepress-plugin-baidu-tongji', // 百度统计
-      {
-        hm: baiduCode || '01293bffa6c3962016c08ba685c79d78'
-      }
-    ],
+    // [
+    //   'vuepress-plugin-baidu-tongji', // 百度统计
+    //   {
+    //     hm: baiduCode || '01293bffa6c3962016c08ba685c79d78'
+    //   }
+    // ],
 
     ['one-click-copy', { // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
