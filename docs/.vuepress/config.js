@@ -27,26 +27,26 @@ module.exports = {
         { text: '技术选型', link: '/项目指南/tech/' },
       ]},
       { text: '后端服务',  items: [
-        { text: '后端介绍', link: '/backIntroduce/' },
-        { text: '服务启动', link: '/backStart/' },
-        { text: 'Gateway服务', link: '/gateway/' },
-        { text: 'base服务', link: '/base/' },
+        { text: '后端介绍', link: '/后端服务/backIntroduce/' },
+        { text: '服务启动', link: '/后端服务/backStart/' },
+        { text: 'Gateway服务', link: '/后端服务/gateway/' },
+        { text: 'base服务', link: '/后端服务/base/' },
       ]},
       { text: '前端服务',  items: [
-        { text: '框架介绍', link: '/webIntroduce/' },
-        { text: '服务启动', link: '/webStart/' },
+        { text: '框架介绍', link: '/前端服务/webIntroduce/' },
+        { text: '服务启动', link: '/前端服务/webStart/' },
       ]},
       { text: '运维管理',  items: [
-        { text: '项目部署', link: '/deploy/' },
-        { text: '监控', link: '/monitor/' },
+        { text: '项目部署', link: '/运维管理/deploy/' },
+        { text: '监控', link: '/运维管理/monitor/' },
       ]},
       { text: '技术学习',  items: [
-        { text: 'Linux', link: '/linux/' },
-        { text: '日志', link: '/log/' },
+        { text: 'Linux', link: '/技术学习/linux/' },
+        { text: '日志', link: '/技术学习/log/' },
       ]},
       { text: '项目仓库',  items: [
-        { text: 'Gitee', link: '/gitee/' },
-        { text: 'GitHub', link: '/github/' },
+        { text: 'Gitee', link: '/项目仓库/gitee/' },
+        { text: 'GitHub', link: '/项目仓库/github/' },
       ]},
 
      
