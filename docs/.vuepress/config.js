@@ -20,9 +20,193 @@ module.exports = {
   // 主题配置
   themeConfig: {
     nav: [
-      https://blog.csdn.net/mo_sss/article/details/142261126
+      { text: '首页', link: '/' },
+      { text: '项目指南',  items: [
+        { text: '项目介绍', link: '/项目指南/project/' },
+        { text: '项目架构', link: '/项目指南/arch/' },
+        { text: '技术选型', link: '/项目指南/tech/' },
+      ]},
+      { text: '后端服务',  items: [
+        { text: '后端介绍', link: '/backIntroduce/' },
+        { text: '服务启动', link: '/backStart/' },
+        { text: 'Gateway服务', link: '/gateway/' },
+        { text: 'base服务', link: '/base/' },
+      ]},
+      { text: '前端服务',  items: [
+        { text: '框架介绍', link: '/webIntroduce/' },
+        { text: '服务启动', link: '/webStart/' },
+      ]},
+      { text: '运维管理',  items: [
+        { text: '项目部署', link: '/deploy/' },
+        { text: '监控', link: '/monitor/' },
+      ]},
+      { text: '技术学习',  items: [
+        { text: 'Linux', link: '/linux/' },
+        { text: '日志', link: '/log/' },
+      ]},
+      { text: '项目仓库',  items: [
+        { text: 'Gitee', link: '/gitee/' },
+        { text: 'GitHub', link: '/github/' },
+      ]},
+
      
     ], 
+
+    sidebar: {
+      '/项目指南/project/': [
+        {
+          text: '项目介绍',
+          collapsible: true,
+          prefix: '项目指南/project/',
+          children: [
+            '项目介绍.md',
+            '项目目录.md',
+
+          ]
+        }
+      ],
+      '/项目指南/arch/': [
+        {
+          text: '项目架构',
+          collapsible: true,
+          prefix: '项目指南/arch/', 
+          children: [
+            '项目架构.md',
+          ]
+        }
+      ],
+      '/项目指南/tech/': [
+        {
+          text: '技术选型',
+          collapsible: true,
+          prefix: '项目指南/tech/',
+          children: [
+            '技术选型.md',
+          ]
+        }
+      ],
+      '/后端服务/backIntroduce/': [
+        {
+          text: '后端介绍',
+          collapsible: true,
+          prefix: '后端服务/backIntroduce/',
+          children: [
+            '后端介绍.md',
+          ]
+        }
+      ],
+      '/后端服务/backStart/': [
+        {
+          text: '服务启动',
+          collapsible: true,
+          prefix: '后端服务/backStart/',
+          children: [
+            '服务启动.md',
+          ]
+        }
+      ],
+      '/后端服务/gateway/': [
+        {
+          text: 'Gateway服务',
+          collapsible: true,
+          prefix: '后端服务/gateway/',
+          children: [
+            'gateway.md',
+          ]
+        }
+      ],
+      '/后端服务/base/': [
+        {
+          text: 'base服务',
+          collapsible: true,
+          prefix: '后端服务/base/',
+          children: [
+            'base.md',
+          ]
+        }
+      ],
+      '/前端服务/webIntroduce/': [
+        {
+          text: '框架介绍',
+          collapsible: true,
+          prefix: '前端服务/webIntroduce/',
+          children: [
+            '框架介绍.md',
+          ]
+        }
+      ],
+      '/前端服务/webStart/': [
+        {
+          text: '服务启动',
+          collapsible: true,
+          prefix: '前端服务/webStart/',
+          children: [
+            '服务启动.md',
+          ]
+        }
+      ],
+      '/运维管理/deploy/': [
+        {
+          text: '项目部署',
+          collapsible: true,
+          prefix: '运维管理/deploy/',
+          children: [
+            '项目部署.md',
+          ]
+        }
+      ],
+      '/运维管理/monitor/': [
+        {
+          text: '监控',
+          collapsible: true,
+          prefix: '运维管理/monitor/',
+          children: [
+            '监控.md',
+          ]
+        }
+      ],
+      '/技术学习/linux/': [
+        {
+          text: '监控',
+          collapsible: true,
+          prefix: '技术学习/linux/',
+          children: [
+            'Linux.md',
+          ]
+        }
+      ],
+      '/技术学习/log/': [
+        {
+          text: '日志',
+          collapsible: true,
+          prefix: '技术学习/log/',
+          children: [
+            '日志.md',
+          ]
+        }
+      ],
+      '/项目仓库/gitee/': [
+        {
+          text: 'Gitee',
+          collapsible: true,
+          prefix: '项目仓库/gitee/',
+          children: [
+            'Gitee.md',
+          ]
+        }
+      ],
+      '/项目仓库/github/': [
+        {
+          text: 'GitHub',
+          collapsible: true,
+          prefix: '项目仓库/github/',
+          children: [
+            'GitHub.md',
+          ]
+        }
+      ],
+    },
+  
     
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.gif', // 导航栏logo
@@ -35,7 +219,7 @@ module.exports = {
     // editLinkText: '编辑',
 
     // 以下配置是Vdoing主题改动的和新增的配置
-    //sidebar: { mode: 'structuring', collapsable: true }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+     //sidebar: { mode: 'structuring', collapsable: true }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
     sidebarOpen: true, // 初始状态是否打开侧边栏，默认true
     updateBar: { // 最近更新栏
@@ -52,12 +236,12 @@ module.exports = {
 
     // contentBgStyle: 1,
 
-    category: true, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
-    tag: true, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
+    category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
+    tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
-      name: 'Evan Xu', // 必需
+      name: 'ZeYu', // 必需
       href: 'https://github.com/xugaoyi' // 可选的
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
@@ -129,9 +313,6 @@ module.exports = {
     }],
     ['demo-block', { // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
       settings: {
-        // jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
-        // cssLib: ['http://xxx'], // 在线示例中的css依赖
-        // vue: 'https://jsd.cdn.zzko.cn/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
         jsfiddle: false, // 是否显示 jsfiddle 链接
         codepen: true, // 是否显示 codepen 链接
         horizontal: false // 是否展示为横向样式
